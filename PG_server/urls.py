@@ -19,7 +19,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/authentication/', include('authentication.urls')),
     path('api/password/', include('password_generator.urls')),
-    path('auth/', include('drf_social_oauth2.urls', namespace='drf'))
+    # path('auth/', include('drf_social_oauth2.urls', namespace='drf'))
 ]

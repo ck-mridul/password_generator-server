@@ -9,7 +9,7 @@ class GeneratePassword(APIView):
     def post(self,request):
         attributes = request.data['attributes']
         length = request.data['length']
-        char_set = ''
+        char_set = '' 
         
         if attributes['upperCase']:
             char_set += string.ascii_uppercase
